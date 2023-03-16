@@ -1,0 +1,99 @@
+body {
+    background-color: #046B99;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px;
+}
+
+#dicEng {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-style: 'Montserrat', sans-serif;
+    color: #1C304A;
+}
+#dicBhs {
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-style: 'Montserrat', sans-serif;
+    color: #1C304A;
+}
+
+
+#tombol1 {
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#tombol2 {
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+.card {
+    margin-top: 1rem;
+    height: 50px;
+    width: 300px;
+    position: relative;
+    border-radius: 0.25rem;
+}
+
+.cardFront,
+.cardBack {
+    background-color: #B3EFFF;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    height: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    transition: transform 0.5s ease;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.cardBack {
+    background-color: #B3EFFF;
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.cardBack.flipped {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.cardFront {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.cardFront.flipped {
+    transform: perspective(1000px) rotateY(-180deg);
+}
